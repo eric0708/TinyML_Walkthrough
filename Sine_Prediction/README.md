@@ -4,14 +4,32 @@
 3. Added print model summary functions and deleted the usage of passing the `experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF` argument when initializing the TFLite interpreter to avoid errors
 
 # Run Sample Test
-1. In terminal, copy and paste ```git clone https://github.com/tensorflow/tflite-micro.git```
-2. Requires `make` version to be greater than 3.82, use gmake instead by first running ```brew install make```
-3. Go into the `tflite-micro` directory by running ```cd tflite-micro```
-4. Run ```gmake -f tensorflow/lite/micro/tools/make/Makefile test_hello_world_test```
+1. In terminal, copy and paste 
+```
+git clone https://github.com/tensorflow/tflite-micro.git
+```
+2. Requires `make` version to be greater than 3.82, use gmake instead by first running 
+```
+brew install make
+```
+3. Go into the `tflite-micro` directory by running 
+```
+cd tflite-micro
+```
+4. Run 
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile test_hello_world_test
+```
 
 # Run Application
-1. In terminal, enter the `tflite-micro` directory and run ```gmake -f tensorflow/lite/micro/tools/make/Makefile hello_world```
-2. Run the application binary using ```gen/osx_arm64_default/bin/hello_world```
+1. In terminal, enter the `tflite-micro` directory and run 
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile hello_world
+```
+2. Run the application binary using 
+```
+gen/osx_arm64_default/bin/hello_world
+```
 
 # Deploying to Arduino
 1. Download the [Arduino IDE](https://www.arduino.cc/en/software)
