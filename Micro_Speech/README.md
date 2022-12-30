@@ -33,11 +33,24 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile test_command_responder_test
 ```
 
 # Run Application
-1. In terminal, enter the `tflite-micro` directory and run 
+1. Change the `audio_provider.cc` file with the one provided in this directory, which enables the application to run for MacOS
+2. Copy the following code snippet into the end of `Makefile.inc`
+```
+ifeq ($(TARGET), osx)
+  LINKER_FLAGS := \
+    -framework Foundation \
+    -framework AudioToolbox
+
+  MICROLITE_LIBS += $(LINKER_FLAGS)
+  MICRO_SPEECH_HDRS += tensorflow/lite/micro/examples/micro_speech/simple_features/simple_model_settings.h
+endif
+```
+3. In terminal, enter the `tflite-micro` directory and run 
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile micro_speech
 ```
-2. Run the application binary using 
+4. Run the application binary using 
 ```
 gen/osx_arm64_default/bin/micro_speech
 ```
+5. The output window should indicate when "yes" or "no" is spoken, or show that the sound is "silent" or "unknown"
