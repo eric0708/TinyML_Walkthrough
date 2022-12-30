@@ -31,3 +31,13 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile test_recognize_commands_test
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_command_responder_test
 ```
+
+# Run Application
+1. In terminal, enter the `tflite-micro` directory and run 
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile micro_speech
+```
+2. Run the application binary using 
+```
+gen/osx_arm64_default/bin/micro_speech
+```
