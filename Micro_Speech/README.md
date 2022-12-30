@@ -27,3 +27,7 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile test_feature_provider_mock_te
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_recognize_commands_test
 ```
+8. Run the following command to test the command responder
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile test_command_responder_test
+```
