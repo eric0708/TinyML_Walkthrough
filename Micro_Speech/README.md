@@ -53,4 +53,4 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile micro_speech
 ```
 gen/osx_arm64_default/bin/micro_speech
 ```
-5. The output window should indicate when "yes" or "no" is spoken, or show that the sound is "silent" or "unknown"
+5. The output window should indicate when "yes" or "no" is spoken, or show that the sound is "silence" or "unknown"
