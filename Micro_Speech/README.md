@@ -23,3 +23,7 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile test_audio_provider_test
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_feature_provider_mock_test
 ```
+7. Run the following command to test the command recognizer
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile test_recognize_commands_test
+```
