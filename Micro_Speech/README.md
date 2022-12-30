@@ -54,3 +54,15 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile micro_speech
 gen/osx_arm64_default/bin/micro_speech
 ```
 5. The output window should indicate when "yes" or "no" is spoken, or show that the sound is "silence" or "unknown"
+
+# Deploying to Arduino
+1. Download the [Arduino IDE](https://www.arduino.cc/en/software)
+2. Open the `Arduino IDE` application
+3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` by TinyMLx Authors
+4. Select `File -> Examples -> Harvard_TinyMLx -> micro_speech` to open up all the sample code files
+5. Select `Tools -> Board -> Boards Manager` and download `Arduino Mbed OS Nano Boards` by Arduino
+6. Select `Tools -> Board -> Arduino Mbed OS Nano Boards -> Arduino Nano 33 BLE`
+7. Select `Tools -> Port` and the corresponding port of the `Arduino Nano 33 BLE`
+8. Click the upload button indicated by a right arrow on the upper left corner in the `Arduino IDE`
+9. The LED should start to repeatedly flash on and off, indicating it is inferencing
+10. The RGB LEDs will light up accordingly to input sounds, green for "yes", red for "no", and blue for "unknown"
