@@ -10,11 +10,12 @@
 
 # Deploying to Arduino
 1. Download the [Arduino IDE](https://www.arduino.cc/en/software)
-2. Select "Tools" -> "Manage Libraries" and download "Harvard_TinyMLx" by TinyMLx Authors
-3. Select "File" -> "Examples" -> "Harvard_TinyMLx" -> "hello_world" to open up all the sample code files
-4. Select "Tools" -> "Board" -> "Boards Manager" and download "Arduino Mbed OS Nano Boards" by Arduino
-5. Select "Tools" -> "Board" -> "Arduino Mbed OS Nano Boards" -> "Arduino Nano 33 BLE"
-6. Select "Tools" -> "Port" and the corresponding port of the "Arduino Nano 33 BLE"
-7. Click the upload button on the Arduino IDE
-8. The LED should start to repeatedly fade on and off
-9. Adjust the "kInferencesPerCycle" parameter defined in "arduino_constants.cpp" to modify how fast the LED fades
+2. Open the "Arduino IDE" application
+3. Select "Tools" -> "Manage Libraries" and download "Harvard_TinyMLx" by TinyMLx Authors
+4. Select "File" -> "Examples" -> "Harvard_TinyMLx" -> "hello_world" to open up all the sample code files
+5. Select "Tools" -> "Board" -> "Boards Manager" and download "Arduino Mbed OS Nano Boards" by Arduino
+6. Select "Tools" -> "Board" -> "Arduino Mbed OS Nano Boards" -> "Arduino Nano 33 BLE"
+7. Select "Tools" -> "Port" and the corresponding port of the "Arduino Nano 33 BLE"
+8. Click the upload button on the Arduino IDE
+9. The LED should start to repeatedly fade on and off
+10. Adjust the "kInferencesPerCycle" parameter defined in "arduino_constants.cpp" to modify how fast the LED fades
