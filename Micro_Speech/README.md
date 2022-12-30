@@ -11,7 +11,11 @@ brew install make
 ```
 cd tflite-micro
 ```
-4. Run the command
+4. Run the following command to test the micro speech model
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_micro_speech_test
+```
+5. Run the following command to test the audio provider
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile test_audio_provider_test
 ```
