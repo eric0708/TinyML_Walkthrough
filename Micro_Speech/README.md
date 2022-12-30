@@ -19,3 +19,7 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile test_micro_speech_test
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_audio_provider_test
 ```
+6. Run the following command to test the feature provider
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile test_feature_provider_mock_test
+```
