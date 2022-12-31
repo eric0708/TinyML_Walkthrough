@@ -27,3 +27,14 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile test_gesture_predictor_test
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_gesture_output_handler_test
 ```
+
+# Run Application
+1. In terminal, enter the `tflite-micro` directory and run 
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile magic_wand
+```
+2. Run the application binary using 
+```
+gen/osx_arm64_default/bin/magic_wand
+```
+3. There will not be any output since there is no accelerometer data available
