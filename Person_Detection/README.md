@@ -39,7 +39,7 @@ gen/osx_arm64_default/bin/person_detection
 # Deploying to Arduino
 1. Download the [Arduino IDE](https://www.arduino.cc/en/software)
 2. Open the `Arduino IDE` application
-3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` by TinyMLx Authors
+3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` version 1.2.3-Alpha by TinyMLx Authors
 4. Select `File -> Examples -> Harvard_TinyMLx -> person_detection` to open up all the sample code files
 5. Run the following command to download the `Arducam Arduino library` from GitHub
 ```
