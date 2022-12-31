@@ -68,5 +68,5 @@ if (readRegister(LSM9DS1_ADDRESS, 0x2f) & 63) {
 10. Select `Tools -> Board -> Arduino Mbed OS Nano Boards -> Arduino Nano 33 BLE`
 11. Select `Tools -> Port` and the corresponding port of the `Arduino Nano 33 BLE`
 12. Click the upload button indicated by a right arrow on the upper left corner in the `Arduino IDE`
-13. Hold the `ARDUINO Nano 33 BLE Sense Lite` by the USB with all the elements facing up and start writing number in the air
+13. Hold the `ARDUINO Nano 33 BLE Sense Lite` by the USB with all the elements facing up and start writing numbers in the air
 14. The Serial Monitor will output correspondingly when a number is written
