@@ -44,14 +44,29 @@ gen/osx_arm64_default/bin/magic_wand
 2. Open the `Arduino IDE` application
 3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` by TinyMLx Authors
 4. Select `File -> Examples -> Harvard_TinyMLx -> magic_wand` to open up all the sample code files
-5. Select `Tools -> Manage Libraries` from `Arduino IDE` to search for and download the `Arduino_LSM9DS1` library version 1.0.0 by Arduino
-
-9. Open `Arduino/libraries/JPEGDecoder/src/User_Config.h` and comment out `#define LOAD_SD_LIBRARY` and `#define LOAD_SDFAT_LIBRARY`
-10. Assemble `ARDUINO Nano 33 BLE Sense Lite` and `OV7675 Camera Module` onto `Tiny Machine Learning Shield` and connect to computer using USB Cable
-11. Select `Tools -> Board -> Boards Manager` and download `Arduino Mbed OS Nano Boards` by Arduino
-12. Select `Tools -> Board -> Arduino Mbed OS Nano Boards -> Arduino Nano 33 BLE`
-13. Select `Tools -> Port` and the corresponding port of the `Arduino Nano 33 BLE`
-14. Click the upload button indicated by a right arrow on the upper left corner in the `Arduino IDE`
-15. The Blue LED should start to repeatedly flash on and off, indicating it is inferencing
-16. The Red and Green LEDs should flash on and off according to the inference results, red for no person detected and green for person detected
-
+5. Select `Tools -> Manage Libraries` from `Arduino IDE` to search for and download the `Arduino_LSM9DS1` library version 1.1.1 by Arduino
+6. Open `Arduino/libraries/Arduino_LSM9DS1/src/LSM9DS1.cpp`, go to the function `LSM9DS1Class::begin()` and add the following line at the end of the function, right before the `return 1` statement
+```
+writeRegister(LSM9DS1_ADDRESS, 0x2e, 0xc0); // Set continuous mode
+```
+Next, go to the function `LSM9DS1Class::accelerationAvailable()` and comment out the following lines
+```
+if (readRegister(LSM9DS1_ADDRESS, LSM9DS1_STATUS_REG) & 0x01) {
+  return 1;
+}
+```
+Replace the above lines with the following
+```
+// Read FIFO_SRC. If any of the rightmost 8 bits have a value, there is data.
+if (readRegister(LSM9DS1_ADDRESS, 0x2f) & 63) {
+  return 1;
+}
+```
+7. Select `Tools -> Manage Libraries` from `Arduino IDE` to search for and download the `ArduinoBLE` library version 1.3.2 by Arduino
+8. Connect `ARDUINO Nano 33 BLE Sense Lite` to the computer using USB Cable
+9. Select `Tools -> Board -> Boards Manager` and download `Arduino Mbed OS Nano Boards` by Arduino
+10. Select `Tools -> Board -> Arduino Mbed OS Nano Boards -> Arduino Nano 33 BLE`
+11. Select `Tools -> Port` and the corresponding port of the `Arduino Nano 33 BLE`
+12. Click the upload button indicated by a right arrow on the upper left corner in the `Arduino IDE`
+13. Hold the `ARDUINO Nano 33 BLE Sense Lite` by the USB with all the elements facing up and start writing number in the air
+14. The Serial Monitor will output correspondingly when a number is written
