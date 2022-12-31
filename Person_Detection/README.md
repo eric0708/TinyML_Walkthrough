@@ -15,3 +15,11 @@ cd tflite-micro
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_person_detection_test
 ```
+5. Run the following command to test the image provider
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile test_image_provider_test
+```
+6. Run the following command to test the detection responder
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile test_detection_responder_test
+```
