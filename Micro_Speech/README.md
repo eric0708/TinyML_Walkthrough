@@ -64,7 +64,7 @@ gen/osx_arm64_default/bin/micro_speech
 # Deploying to Arduino
 1. Download the [Arduino IDE](https://www.arduino.cc/en/software)
 2. Open the `Arduino IDE` application
-3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` by TinyMLx Authors
+3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` version 1.2.3-Alpha by TinyMLx Authors
 4. Select `File -> Examples -> Harvard_TinyMLx -> micro_speech` to open up all the sample code files
 5. Select `Tools -> Board -> Boards Manager` and download `Arduino Mbed OS Nano Boards` by Arduino
 6. Select `Tools -> Board -> Arduino Mbed OS Nano Boards -> Arduino Nano 33 BLE`
