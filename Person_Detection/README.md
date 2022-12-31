@@ -23,3 +23,14 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile test_image_provider_test
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_detection_responder_test
 ```
+
+# Run Application
+1. In terminal, enter the `tflite-micro` directory and run 
+```
+gmake -f tensorflow/lite/micro/tools/make/Makefile person_detection
+```
+2. Run the application binary using 
+```
+gen/osx_arm64_default/bin/person_detection
+```
+3. The output will be constant since the default `image_provider.cc` just returns dummy data
