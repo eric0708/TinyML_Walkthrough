@@ -42,7 +42,7 @@ gen/osx_arm64_default/bin/magic_wand
 # Deploying to Arduino
 1. Download the [Arduino IDE](https://www.arduino.cc/en/software)
 2. Open the `Arduino IDE` application
-3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` by TinyMLx Authors
+3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` version 1.2.3-Alpha by TinyMLx Authors
 4. Select `File -> Examples -> Harvard_TinyMLx -> magic_wand` to open up all the sample code files
 5. Select `Tools -> Manage Libraries` from `Arduino IDE` to search for and download the `Arduino_LSM9DS1` library version 1.1.1 by Arduino
 6. Open `Arduino/libraries/Arduino_LSM9DS1/src/LSM9DS1.cpp`, go to the function `LSM9DS1Class::begin()` and add the following line at the end of the function, right before the `return 1` statement
