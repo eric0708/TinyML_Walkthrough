@@ -1,3 +1,9 @@
+# Train Speech Recognition Model
+1. Run the `train_micro_speech_model.ipynb` notebook
+2. Generally the same as the [train_micro_speech_model.ipynb](https://github.com/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/examples/micro_speech/train/train_micro_speech_model.ipynb) sample notebook provided by TensorFlow
+3. Modifications include modifying the notebook in order for it to run without errors in a tensorflow 2.x environment instead of 1.x
+4. Creates a `model.cc` file that can be used to replace the ones used in the following sections
+
 # Run Sample Test
 1. In terminal, copy and paste 
 ```
