@@ -47,7 +47,7 @@ git clone https://github.com/ArduCAM/Arduino.git
 ```
 6. Copy the ArduCAM directory into the `Arduino/libraries` directory in the computer, whose location can be found through the `Sketchbook location` listed in `Arduino IDE -> Preferences`
 7. Open `Arduino/libraries/ArduCAM/memorysaver.h` and comment out all `#define` statements except for `#define ARDUCAM_SHIELD_REVC` and `#define OV7675_CAM`
-8. Select `Tools -> Manage Libraries` from `Arduino IDE` to search for and download the `JPEGDecoder` library
+8. Select `Tools -> Manage Libraries` from `Arduino IDE` to search for and download the `JPEGDecoder` library version 1.8.0
 9. Open `Arduino/libraries/JPEGDecoder/src/User_Config.h` and comment out `#define LOAD_SD_LIBRARY` and `#define LOAD_SDFAT_LIBRARY`
 10. Assemble `ARDUINO Nano 33 BLE Sense Lite` and `OV7675 Camera Module` onto `Tiny Machine Learning Shield` and connect to computer using USB Cable
 11. Select `Tools -> Board -> Boards Manager` and download `Arduino Mbed OS Nano Boards` by Arduino
