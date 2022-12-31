@@ -1,7 +1,7 @@
 # Train Sine Prediction Model
 1. Run the `train_hello_world_model.ipynb` notebook, remember to restart runtime after installing the dependencies
 2. Generally the same as the [train_hello_world_model.ipynb](https://github.com/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/examples/hello_world/train/train_hello_world_model.ipynb) sample notebook provided by TensorFlow
-3. Modifications include Adding print model summary functions and deleting the usage of passing the `experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF` argument when initializing the TFLite interpreter to avoid errors
+3. Modifications include adding print model summary functions and deleting the usage of passing the `experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF` argument when initializing the TFLite interpreter to avoid errors
 4. Creates a `model.cc` file that can be used to replace the ones used in the following sections
 
 # Run Sample Test
