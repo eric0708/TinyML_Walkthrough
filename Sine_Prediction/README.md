@@ -1,10 +1,15 @@
-# Train Sine Prediction Model
+# The "Hello World" of TinyML
+
+## Task Overview
+Train and deploy a model that is capable of predicting the sine values of inputs and changes the brightness of an LED according to the output values
+
+## Train Sine Prediction Model
 1. Run the `train_hello_world_model.ipynb` notebook, remember to restart runtime after installing the dependencies
 2. Generally the same as the [train_hello_world_model.ipynb](https://github.com/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/examples/hello_world/train/train_hello_world_model.ipynb) sample notebook provided by TensorFlow
 3. Modifications include adding print model summary functions and deleting the usage of passing the `experimental_op_resolver_type=tf.lite.experimental.OpResolverType.BUILTIN_REF` argument when initializing the TFLite interpreter to avoid errors
 4. Creates a `model.cc` file that can be used to replace the ones used in the following sections
 
-# Run Sample Test
+## Run Sample Test
 1. In terminal, copy and paste 
 ```
 git clone https://github.com/tensorflow/tflite-micro.git
@@ -22,7 +27,7 @@ cd tflite-micro
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_hello_world_test
 ```
 
-# Run Application
+## Run Application
 1. In terminal, enter the `tflite-micro` directory and run 
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile hello_world
@@ -32,7 +37,7 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile hello_world
 gen/osx_arm64_default/bin/hello_world
 ```
 
-# Deploying to Arduino
+## Deploying to Arduino
 1. Download the [Arduino IDE](https://www.arduino.cc/en/software)
 2. Open the `Arduino IDE` application
 3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` version 1.2.3-Alpha by TinyMLx Authors
