@@ -1,4 +1,16 @@
-# Run Sample Test
+# Magic Wand
+
+## Task Overview
+Train and deploy a model that acts accordingly upon the detection of certain motions
+
+## Train Speech Recognition Model
+1. Run the `train_magic_wand_model.ipynb` notebook
+2. Generally the same as the [train_magic_wand_model.ipynb](https://github.com/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/examples/magic_wand/train/train_magic_wand_model.ipynb) sample notebook provided by TensorFlow
+3. Shows the results of running all the code blocks in the notebook
+4. Creates a `model.cc` file that is capable of recognizing three motion patterns, "wing", "ring", and "slope"
+5. The model used in the following sections is a provided default pretrained model that is capable of recognizing written digits, modifications must be made to the code deployed to Arduino in order to use the self-trained model in this section
+
+## Run Sample Test
 1. In terminal, copy and paste 
 ```
 git clone https://github.com/tensorflow/tflite-micro.git
@@ -28,7 +40,7 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile test_gesture_predictor_test
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_gesture_output_handler_test
 ```
 
-# Run Application
+## Run Application
 1. In terminal, enter the `tflite-micro` directory and run 
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile magic_wand
@@ -39,7 +51,7 @@ gen/osx_arm64_default/bin/magic_wand
 ```
 3. There will not be any output since there is no accelerometer data available
 
-# Deploying to Arduino
+## Deploying to Arduino
 1. Download the [Arduino IDE](https://www.arduino.cc/en/software)
 2. Open the `Arduino IDE` application
 3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` version 1.2.3-Alpha by TinyMLx Authors
