@@ -1,10 +1,15 @@
-# Train Speech Recognition Model
+# Wake-Word Detection
+
+## Task Overview
+Train and deploy a model that reacts accordingly upon the detection of wake-words("yes" or "no" in this example)
+
+## Train Speech Recognition Model
 1. Run the `train_micro_speech_model.ipynb` notebook
 2. Generally the same as the [train_micro_speech_model.ipynb](https://github.com/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/examples/micro_speech/train/train_micro_speech_model.ipynb) sample notebook provided by TensorFlow
 3. Modifications include modifying the notebook in order for it to run without errors in a tensorflow 2.x environment instead of 1.x
 4. Creates a `model.cc` file that can be used to replace the ones used in the following sections
 
-# Run Sample Test
+## Run Sample Test
 1. In terminal, copy and paste 
 ```
 git clone https://github.com/tensorflow/tflite-micro.git
@@ -38,7 +43,7 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile test_recognize_commands_test
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_command_responder_test
 ```
 
-# Run Application
+## Run Application
 1. Change the `audio_provider.cc` file with the one provided in this directory, which enables the application to run for MacOS
 2. Copy the following code snippet into the end of `Makefile.inc`
 ```
@@ -61,7 +66,7 @@ gen/osx_arm64_default/bin/micro_speech
 ```
 5. The output window should indicate when "yes" or "no" is spoken, or show that the sound is "silence" or "unknown"
 
-# Deploying to Arduino
+## Deploying to Arduino
 1. Download the [Arduino IDE](https://www.arduino.cc/en/software)
 2. Open the `Arduino IDE` application
 3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` version 1.2.3-Alpha by TinyMLx Authors
