@@ -1,5 +1,5 @@
 # TinyML Projects
 
 ## Overview
-Includes project implementations from the TinyML book by Pete Warden
--Sine_Prediction - The 
+Includes walkthroughs of project implementations from the TinyML book by Pete Warden
+- Sine_Prediction: The "Hello World" of TinyML
