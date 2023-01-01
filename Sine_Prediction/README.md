@@ -42,9 +42,10 @@ gen/osx_arm64_default/bin/hello_world
 2. Open the `Arduino IDE` application
 3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` version 1.2.3-Alpha by TinyMLx Authors
 4. Select `File -> Examples -> Harvard_TinyMLx -> hello_world` to open up all the sample code files
-5. Select `Tools -> Board -> Boards Manager` and download `Arduino Mbed OS Nano Boards` by Arduino
-6. Select `Tools -> Board -> Arduino Mbed OS Nano Boards -> Arduino Nano 33 BLE`
-7. Select `Tools -> Port` and the corresponding port of the `Arduino Nano 33 BLE`
-8. Click the upload button indicated by a right arrow on the upper left corner in the `Arduino IDE`
-9. The LED should start to repeatedly fade on and off
-10. Adjust the `kInferencesPerCycle` parameter defined in `arduino_constants.cpp` to modify how fast the LED fades
+5. Connect `ARDUINO Nano 33 BLE Sense Lite` to the computer using USB Cable
+6. Select `Tools -> Board -> Boards Manager` and download `Arduino Mbed OS Nano Boards` by Arduino
+7. Select `Tools -> Board -> Arduino Mbed OS Nano Boards -> Arduino Nano 33 BLE`
+8. Select `Tools -> Port` and the corresponding port of the `Arduino Nano 33 BLE`
+9. Click the upload button indicated by a right arrow on the upper left corner in the `Arduino IDE`
+10. The LED should start to repeatedly fade on and off
+11. Adjust the `kInferencesPerCycle` parameter defined in `arduino_constants.cpp` to modify how fast the LED fades
