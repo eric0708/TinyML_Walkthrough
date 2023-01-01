@@ -3,7 +3,7 @@
 ## Task Overview
 Deploy a pretrained person detection model and act accordingly to the inference results
 
-## Training a Person Detection Model
+## Train Person Detection Model
 The model used in the following processes is a provided pretrained model since the training of the model requires more training time and resources
 
 ## Run Sample Test
