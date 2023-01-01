@@ -1,4 +1,12 @@
-# Run Sample Test
+# Person Detection
+
+## Task Overview
+Deploy a pretrained person detection model and act accordingly to the inference results
+
+## Training a Person Detection Model
+The model used in the following processes is a provided pretrained model since the training of the model requires more training time and resources
+
+## Run Sample Test
 1. In terminal, copy and paste 
 ```
 git clone https://github.com/tensorflow/tflite-micro.git
@@ -24,7 +32,7 @@ gmake -f tensorflow/lite/micro/tools/make/Makefile test_image_provider_test
 gmake -f tensorflow/lite/micro/tools/make/Makefile test_detection_responder_test
 ```
 
-# Run Application
+## Run Application
 1. In terminal, enter the `tflite-micro` directory and run 
 ```
 gmake -f tensorflow/lite/micro/tools/make/Makefile person_detection
@@ -36,7 +44,7 @@ gen/osx_arm64_default/bin/person_detection
 3. The output will be constant since the default `image_provider.cc` just returns dummy data
 
 
-# Deploying to Arduino
+## Deploying to Arduino
 1. Download the [Arduino IDE](https://www.arduino.cc/en/software)
 2. Open the `Arduino IDE` application
 3. Select `Tools -> Manage Libraries` and download `Harvard_TinyMLx` version 1.2.3-Alpha by TinyMLx Authors
