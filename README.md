@@ -1,4 +1,4 @@
-# TinyML Projects
+# TinyML Walkthrough
 
 ## Overview
 Includes walkthroughs of project implementations from the TinyML book by Pete Warden
